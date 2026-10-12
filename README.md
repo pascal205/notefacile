@@ -1,46 +1,64 @@
 # 📝 NoteFacile
 
-**NoteFacile** est une application de bureau développée en Java, conçue pour offrir une expérience simple et agréable de prise de notes. Son interface moderne s'appuie sur Java Swing et FlatLaf, tandis que Maven facilite la gestion du projet et de ses dépendances.
+**NoteFacile** est une application de bureau de prise de notes développée en Java. Elle utilise Java Swing pour son interface graphique et FlatLaf pour lui donner une apparence moderne.
 
-> 🎯 **Objectif :** créer une application de prise de notes pratique, avec une interface soignée et une base technique facile à faire évoluer.
+🚧 **Le projet est actuellement à ses débuts.** Il s'agit d'une application basique que je souhaite faire évoluer progressivement en y intégrant de nouvelles fonctionnalités et en améliorant continuellement son interface et son fonctionnement.
 
-## ✨ Fonctionnalités
+🎯 **Mon objectif :** transformer progressivement NoteFacile en une application de prise de notes plus complète, pratique et agréable à utiliser.
 
-- 📝 **Prise de notes** — un espace dédié à la gestion de notes.
-- 🖥️ **Interface graphique** — une application de bureau basée sur Java Swing.
-- 🎨 **Design moderne** — utilisation de FlatLaf pour améliorer l'apparence de l'interface.
-- 🧩 **Architecture Java** — organisation du code en classes pour faciliter la maintenance.
-- 📦 **Gestion des dépendances** — utilisation de Maven pour structurer le projet.
+---
 
-*Les fonctionnalités détaillées sont à adapter à la version actuelle de l'application.*
+## 🚧 État du projet
+
+NoteFacile est actuellement dans une première phase de développement. Cette version constitue une base de travail sur laquelle je compte m'appuyer pour construire une application plus aboutie.
+
+Le projet est conçu pour évoluer au fil du temps. Je souhaite notamment enrichir ses fonctionnalités, améliorer l'expérience utilisateur et explorer de nouvelles possibilités afin de rendre l'application plus utile au quotidien.
+
+Ce projet représente également une occasion de mettre en pratique mes connaissances en Java, de renforcer mes compétences en développement logiciel et d'expérimenter de nouvelles approches de conception.
+
+**NoteFacile n'en est qu'à ses débuts : de nombreuses améliorations restent à venir !**
+
+## ✨ Fonctionnalités actuelles
+
+L'application repose sur une interface graphique de bureau développée avec Java Swing et FlatLaf.
+
+Les fonctionnalités présentées dans cette section sont à compléter selon ce qui est réellement opérationnel dans la version actuelle du projet.
+
+- 📝 Une application dédiée à la prise de notes.
+- 🖥️ Une interface graphique de bureau.
+- 🎨 Une apparence personnalisée grâce à FlatLaf.
+- 🧩 Une base de code Java destinée à évoluer progressivement.
 
 ## 🛠️ Technologies utilisées
 
-| Technologie | Utilisation |
+| Technologie | Rôle |
 |---|---|
-| Java 17 | Langage de programmation |
-| Java Swing | Création de l'interface graphique |
-| FlatLaf | Personnalisation de l'interface |
-| Apache Maven | Gestion du projet et des dépendances |
-| Git & GitHub | Gestion des versions et hébergement du code |
+| ☕ Java 17 | Langage de programmation |
+| 🖥️ Java Swing | Création de l'interface graphique |
+| 🎨 FlatLaf | Personnalisation de l'interface |
+| 📦 Apache Maven | Gestion du projet et des dépendances |
+| 🔧 Git | Gestion des versions |
+| 🐙 GitHub | Hébergement du code source |
 
 ## 📋 Prérequis
 
-Avant de commencer, assure-toi de disposer des éléments suivants :
+Pour installer et exécuter le projet, tu auras besoin de :
 
-- **JDK 17** ou une version compatible avec le projet.
-- **Apache Maven** pour compiler et gérer les dépendances.
-- Un IDE Java, comme IntelliJ IDEA, Eclipse ou NetBeans, ou Visual Studio Code configuré pour Java.
+- **JDK 17** ou d'une version compatible avec la configuration du projet.
+- **Apache Maven**, pour compiler le code et gérer les dépendances.
+- Un environnement de développement Java, comme IntelliJ IDEA, Eclipse, NetBeans ou Visual Studio Code configuré pour Java.
 
 ## 🚀 Installation
 
 ### 1. Cloner le dépôt
 
+Ouvre un terminal et exécute la commande suivante :
+
 ```bash
 git clone https://github.com/pascal205/notefacile.git
 ```
 
-### 2. Accéder au projet
+### 2. Accéder au dossier du projet
 
 ```bash
 cd notefacile
@@ -54,17 +72,17 @@ cd notefacile
 mvn clean package
 ```
 
-Cette commande nettoie les fichiers de compilation précédents, compile le code et exécute les étapes de construction configurées dans Maven.
+Cette commande nettoie les anciens fichiers générés, compile le code source et exécute les étapes de construction configurées dans Maven.
 
 ### 4. Lancer l'application
 
-Ouvre le projet dans ton IDE Java, laisse Maven télécharger les dépendances, puis exécute la classe principale qui contient la méthode `main()`.
+Ouvre le projet dans ton IDE Java, laisse Maven télécharger les dépendances nécessaires, puis exécute la classe principale contenant la méthode `main()`.
 
-> 💡 Le nom exact de la classe principale dépend de l'organisation du code source. Le lancement direct avec un fichier JAR nécessite également que le JAR soit configuré pour être exécutable.
+> 💡 Le lancement exact dépend de la classe principale et de la configuration Maven du projet.
 
 ## 📁 Structure du projet
 
-Le projet suit une organisation Java avec Maven. Voici la structure standard attendue :
+Le projet utilise Maven pour organiser le code source et les ressources. Voici un exemple d'arborescence possible :
 
 ```text
 notefacile/
@@ -80,68 +98,66 @@ notefacile/
 └── .gitignore
 ```
 
-Cette arborescence est indicative : elle doit être adaptée aux fichiers réellement présents dans le dépôt.
+*Cette structure est indicative et doit être adaptée à l'organisation réelle du dépôt.*
 
 ## 🎨 Interface utilisateur
 
-NoteFacile met l'accent sur une interface graphique claire et moderne, rendue possible par Java Swing et FlatLaf.
+NoteFacile utilise Java Swing pour construire son interface graphique et FlatLaf pour personnaliser son apparence.
 
-Pour présenter le résultat visuellement, tu peux ajouter une capture d'écran de l'application dans le dépôt :
+L'objectif est de proposer une interface claire, agréable et facile à utiliser, tout en conservant une base technique permettant d'intégrer de nouvelles fonctionnalités à l'avenir.
+
+Une capture d'écran de l'application pourra être ajoutée ici afin de présenter son interface actuelle.
+
+Exemple d'intégration d'une capture d'écran :
 
 ```markdown
-![Interface de NoteFacile](docs/images/notefacile-preview.png)
+![Aperçu de NoteFacile](docs/images/notefacile-preview.png)
 ```
 
-Remplace ce chemin par celui d'une capture d'écran réellement ajoutée au projet.
+Pour que l'image s'affiche, il faudra ajouter une véritable capture d'écran à cet emplacement dans le dépôt.
 
-## 🔧 Développement
+## 🗺️ Feuille de route
 
-Pour travailler sur le projet :
-
-1. Clone le dépôt.
-2. Ouvre le projet dans ton environnement Java.
-3. Vérifie la configuration Maven dans `pom.xml`.
-4. Modifie les classes nécessaires.
-5. Compile le projet avec `mvn clean package`.
-6. Teste les modifications avant de les publier.
-
-## 🗺️ Améliorations futures
-
-Voici quelques pistes d'évolution possibles :
+Le développement de NoteFacile se poursuivra progressivement. Voici quelques pistes d'amélioration envisagées pour les prochaines versions.
 
 - [ ] Ajouter la recherche de notes.
-- [ ] Permettre de classer les notes par catégories.
-- [ ] Ajouter la sauvegarde et le chargement des notes.
+- [ ] Intégrer un système de sauvegarde et de chargement des notes.
+- [ ] Organiser les notes par catégories ou dossiers.
 - [ ] Améliorer la personnalisation de l'interface.
-- [ ] Ajouter des tests automatisés.
-- [ ] Préparer une version exécutable facile à installer.
+- [ ] Ajouter de nouvelles fonctionnalités selon les besoins identifiés.
+- [ ] Améliorer progressivement la structure et la maintenabilité du code.
+- [ ] Mettre en place des tests automatisés.
+- [ ] Préparer une version exécutable plus facile à distribuer.
 
-Ces éléments constituent des idées d'évolution et ne sont pas nécessairement disponibles dans la version actuelle.
+Cette feuille de route n'est pas définitive. Les priorités pourront évoluer au fur et à mesure du développement et des nouvelles idées que je souhaiterai explorer.
 
-## 🤝 Contributions
+## 🔧 Participer au développement
 
-Les suggestions, signalements de bugs et propositions d'amélioration sont les bienvenus.
+NoteFacile est un projet évolutif. Toute suggestion pertinente ou proposition d'amélioration peut contribuer à sa progression.
 
 Pour proposer une contribution :
 
 1. Fork le dépôt.
 2. Crée une branche pour ta modification.
-3. Effectue tes changements et vérifie que le projet compile.
-4. Soumets une Pull Request en expliquant les améliorations apportées.
+3. Effectue tes changements.
+4. Vérifie que le projet compile correctement.
+5. Soumets une Pull Request en décrivant les améliorations proposées.
 
 ## 👨‍💻 Auteur
 
 **AMETEPE Pascal**
 
-Développeur en formation en développement web et mobile, intéressé par la création d'applications utiles et d'interfaces modernes.
+Développeur en formation en développement web et mobile, passionné par la création d'applications utiles et la conception d'interfaces modernes.
 
-- GitHub : [@pascal205](https://github.com/pascal205)
-- Projet : [NoteFacile](https://github.com/pascal205/notefacile)
+- **GitHub :** [@pascal205](https://github.com/pascal205)
+- **Dépôt du projet :** [NoteFacile](https://github.com/pascal205/notefacile)
 
 ## 📄 Licence
 
-Aucune licence n'est indiquée ici. Si tu souhaites autoriser la réutilisation et la modification du code, choisis une licence adaptée, puis ajoute le fichier `LICENSE` correspondant au dépôt.
+Aucune licence n'est précisée dans ce README. La licence du projet devra être choisie et ajoutée au dépôt dans un fichier `LICENSE` si tu souhaites définir les conditions de réutilisation et de modification du code.
 
 ---
 
-⭐ **Merci de découvrir NoteFacile !**
+⭐ **Merci de t'intéresser à NoteFacile !**
+
+Ce projet est encore à ses débuts, mais il continuera d'évoluer au fil des améliorations et des nouvelles fonctionnalités que je souhaite lui apporter.
